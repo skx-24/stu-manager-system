@@ -1,0 +1,60 @@
+@import url(../../assets/style/reset.css);
+
+body{
+  background-image: url(../../assets/img/bg.jpg);
+  background-repeat: no-repeat;
+}
+
+.login{
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.logo{
+  width: 400px;
+  margin-bottom: 36px;
+}
+
+.logo > img{
+  width: 100%;
+}
+
+form > input{
+  width: 335px;
+  height: 20px;
+  padding: 10px;
+  outline: none;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.btns{
+  margin: 0 auto;
+  width: 350px;
+}
+
+.btns > *{
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  margin-left: 45px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btns #login-btn{
+  background-color: #409aff;
+}
+
+.btns > a{
+  background-color: #67c23a;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>欢迎登录学生管理系统</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <div class="top">
+    <div class="logo">
+      <img src="../../assets/img/logo.png" alt="">
+    </div>
+    <div class="user-info">沈凯旋</div>
+  </div>
+  <div class="content">
+    <ul class="left-nav" id="left-nav">
+      <li goal = "stuList"  class="active">学生列表</li>
+      <li goal = "addStu">新增学生</li>
+      <li goal = "findStu">查找学生</li>
+    </ul>
+    <div class="right-content" id="right-content">
+      <div class="stuList active-content clearfix" id="stuList">
+        <table  rules = 'rows' cellspacing = '0' cellpadding ='0'>
+          <thead>
+            <tr class="item">
+              <th>姓名</th>
+              <th>学号</th>
+              <th>性别</th>
+              <th>出生日期</th>
+              <th>电话</th>
+              <th>地址</th>
+              <th>邮件</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+        <div class="model">
+          <form class="edit-form">
+            <p>
+              <label for="name">姓名</label>
+              <input type="text" id="name">
+            </p>
+            <p>
+              <label for="sNo">学号</label>
+              <input type="text" id="sNo" readonly>
+            </p>
+            <p>
+              <label for="sex">性别</label>
+              <select name="sex" id="sex">
+                <option value="0" selected>男</option>
+                <option value="1">女</option>
+              </select>
+            </p>
+            <p>
+              <label for="birth">生日</label>
+              <input type="text" id="birth">
+            </p>
+            <p>
+              <label for="phone">电话</label>
+              <input type="text" id="phone">
+            </p>
+            <p>
+              <label for="address">地址</label>
+              <input type="text" id="address">
+            </p>
+            <p>
+              <label for="email">邮件</label>
+              <input type="email" id="email">
+            </p>
+            <p class="btns">
+              <button id="editBtn">修改</button>
+            </p>
+          </form>
+        </div>
+        <div class="turn-page clearfix">
+          <div class="page-left iconfont icon-previewleft"></div>
+          <ul id="page-list">
+            <!-- <li class="actived">1</li>
+            <li>2</li>
+            <li>3</li> -->
+          </ul>
+          <div class="page-right iconfont icon-previewright"></div>
+        </div>
+      </div>
+      <form class="addStu" id="addStu">
+        <p>
+          <label for="name">姓名</label>
+          <input type="text" id="name">
+        </p>
+        <p>
+          <label for="sNo">学号</label>
+          <input type="text" id="sNo">
+        </p>
+        <p>
+          <label for="sex">性别</label>
+          <select name="sex" id="sex">
+            <option value="0" selected>男</option>
+            <option value="1">女</option>
+          </select>
+        </p>
+        <p>
+          <label for="birth">生日</label>
+          <input type="text" id="birth">
+        </p>
+        <p>
+          <label for="phone">电话</label>
+          <input type="text" id="phone">
+        </p>
+        <p>
+          <label for="address">地址</label>
+          <input type="text" id="address">
+        </p>
+        <p>
+          <label for="email">邮件</label>
+          <input type="email" id="email">
+        </p>
+        <p class="btns">
+          <button id="addBtn">添加</button>
+          <button id="resetBtn" type="reset">重置</button>
+        </p>
+      </form>
+      <div class="findStu" id="findStu">
+        <div>
+          <label for="search_input">输入关键字查询 :</label>
+          <input type="text" id="search_input" placeholder="请输入学号、邮箱或地址">
+          <button id="searchBtn">搜索</button>
+        </div>
+        <table  rules = 'rows' cellspacing = '0' cellpadding ='0'>
+          <thead>
+            <tr class="item">
+              <th>姓名</th>
+              <th>学号</th>
+              <th>性别</th>
+              <th>出生日期</th>
+              <th>电话</th>
+              <th>地址</th>
+              <th>邮件</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="../tools/ajax.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>

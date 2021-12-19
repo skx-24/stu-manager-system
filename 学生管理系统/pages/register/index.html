@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>注册</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <!-- 背景 -->
+  <div class="bg"></div>
+  <!-- logo部分 -->
+  <div class="logo">
+    <img src="../../assets/img/logo.png" alt="">
+  </div>
+  <!-- 介绍部分 -->
+  <div class="desc">
+    <h3>用前端</h3>
+    <p>让用户有更好的体验</p>
+  </div>
+  <!-- 注册框 -->
+  <div class="register">
+    <div class="welcome">
+      <h2>欢迎注册</h2>
+      <span>已有账号？</span>
+      <a href="../login/index.html">登录</a>
+    </div>
+    <form id="regist-form">
+      <div class="clearfix">
+        <label for="username">用户名:</label>
+        <input type="text" id="username">
+        <div class="tips" id="tips">设置后不可更改，中英文均可，最长14个英文或7个汉字</div>
+        <div class="errorMsg" id="errorMsg">输入字符不合法，请输入数字字母或汉字</div>
+      </div>
+      <div class="clearfix">
+        <label for="account">账号:</label>
+        <input type="text" id="account">
+      </div>
+      <div class="clearfix">
+        <label for="password">密码:</label>
+        <input type="password" id="password">
+      </div>
+      <div class="clearfix">
+        <label for="repassword">确认密码:</label>
+        <input type="password" id="repassword">
+      </div>
+      <input type="submit" class="register-btn" id="register-btn" value="注册">
+    </form>
+  </div>
+
+  <script src="../tools/ajax.js"></script>
+  <script src="./index.js" defer = true></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+@import url(../../assets/style/reset.css);
+
+.bg {
+  background-image: url(../../assets/img/bg.jpg);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  position: absolute;
+  top: 50px;
+  left: 70px;
+}
+
+.logo img {
+  width: 320px;
+}
+
+.desc {
+  position: absolute;
+  top: 325px;
+  left: 194px;
+}
+
+.desc h3 {
+  font-size: 60px;
+  color: #fff;
+}
+
+.desc p {
+  font-size: 34px;
+  color: #fff;
+}
+
+.register {
+  width: 480px;
+  height: 680px;
+  position: absolute;
+  right: 140px;
+  top: 50%;
+  border-radius: 12px;
+  margin-top: -340px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.welcome {
+  margin-left: 35px;
+  margin-top: 56px;
+}
+
+.welcome h2 {
+  font-size: 40px;
+  color: #000000;
+}
+
+.welcome a {
+  color: #2e58fe;
+}
+
+.register form{
+  margin-top: 70px;
+}
+
+form > div{
+  margin-bottom: 40px;
+  position: relative;
+}
+label{
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+  width: 80px;
+  margin-right: 13px;
+  float: left;
+}
+
+form div input{
+  width: 328px;
+  height: 16  px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  outline-color: #409eff;
+}
+
+.register-btn{
+  width: 397px;
+  height: 48px;
+  display: block;
+  background-color: #3f89ec;
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  color: #fff;
+  border-radius: 24px;
+}
+
+.tips{
+  width: 317px;
+  height: 39px;
+  line-height: 30px;
+  text-align: center;
+  background-image: url(../../assets/img/check-username-bg.png);
+  background-size: cover;
+  position: absolute;
+  left: 97px;
+  top: -46px;
+  font-size: 12px;
+  color: #fff;
+  display: none;
+}
+
+.errorMsg{
+  color: #f55;
+  font-size: 12px;
+  position: absolute;
+  left: 97px;
+  top: 43px;
+  display: none;
+}
+
+.error-active{
+  border: 1px solid #f55;
+}
+
